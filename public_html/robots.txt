@@ -1,0 +1,9 @@
+Sitemap: http://www.ieeeselcuk.com/sitemap.xml
+
+User-agent: *
+
+Disallow: /assets
+Disallow: /connection
+Disallow: /includes
+Disallow: /templates
+Disallow: /.htaccess

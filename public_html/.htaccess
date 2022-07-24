@@ -1,0 +1,19 @@
+
+RewriteEngine on
+
+ErrorDocument 403 http://www.ieeeselcuk.com/403
+ErrorDocument 404 http://www.ieeeselcuk.com/404
+ErrorDocument 400 http://www.ieeeselcuk.com/404
+ErrorDocument 500 http://www.ieeeselcuk.com/404
+
+Options -Indexes
+
+RewriteRule ^homepage$ index.php?url=homepage [NC,L]
+RewriteRule ^about-us$ index.php?url=about-us [NC,L]
+RewriteRule ^portfolio$ index.php?url=portfolio [NC,L]
+RewriteRule ^contact$ index.php?url=contact [NC,L]
+RewriteRule ^404$ index.php?url=404 [NC,L]
+RewriteRule ^403$ index.php?url=403 [NC,L]
+
+RewriteRule ^portfolio-item/(.*)$ index.php?&url=portfolio-item&content-id=$1 [NC,L]
+

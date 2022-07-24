@@ -1,0 +1,4 @@
+RewriteEngine on
+
+#deny all access 
+deny from all 

@@ -1,0 +1,6 @@
+RewriteEngine on
+
+ErrorDocument 404 http://localhost:81/front/IEEE/404
+
+#deny all access 
+deny from all 
